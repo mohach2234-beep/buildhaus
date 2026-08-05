@@ -85,7 +85,42 @@ to each link.
 
 ---
 
-## 5. Replace the placeholder content
+## 5. See how many people visit, and what they ask for
+
+Two separate things, two separate free dashboards:
+
+**What people send you** — once the contact form is connected (step 2 above),
+every submission lands in your Formspree dashboard at
+**https://formspree.io/forms** (also emailed to you as it arrives).
+
+**How many people visit** — this needs Cloudflare Web Analytics, which isn't
+connected yet:
+
+1. Sign up free at **https://dash.cloudflare.com/sign-up**
+2. Go to *Analytics & Logs → Web Analytics → Add a site*
+3. Enter your domain and copy the JavaScript snippet it gives you — it
+   contains a token that looks like `data-cf-beacon='{"token": "abc123..."}'`
+4. Open `index.html`, find this line near the bottom (it's wrapped in
+   `<!-- -->` so it's inactive for now):
+
+   ```html
+   <!-- <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "YOUR_TOKEN"}'></script> -->
+   ```
+
+5. Delete the `<!--` and `-->` around it, and replace `YOUR_TOKEN` with your
+   real token, so it reads:
+
+   ```html
+   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "abc123..."}'></script>
+   ```
+
+No cookies, no consent banner required, and nothing shows on the page itself
+— it's a private dashboard only you can see. Left commented out by default
+because a placeholder token logs a harmless but noisy console error.
+
+---
+
+## 6. Replace the placeholder content
 
 Search `index.html` for **`TODO:`** — every spot that needs your real
 information is marked.
@@ -123,16 +158,22 @@ Change them there and the whole site updates.
 
 ---
 
-## 6. Put it online (free)
+## 7. Put it online (free)
 
-**Easiest — Netlify Drop:**
+**This is already done.** The site is live at:
 
-1. Go to **https://app.netlify.com/drop**
-2. Drag this whole `buildhaus` folder onto the page
-3. It's live in seconds at a `something-random.netlify.app` address
+**https://mohach2234-beep.github.io/buildhaus/**
 
-**Alternative — GitHub Pages:** push this folder to a GitHub repository, then
-in the repo go to *Settings → Pages* and set the source to your main branch.
+It's hosted via GitHub Pages from **https://github.com/mohach2234-beep/buildhaus**.
+Whenever you want to publish a change, from this folder run:
+
+```bash
+git add -A
+git commit -m "describe what changed"
+git push
+```
+
+It redeploys automatically, usually within a minute or two.
 
 ### Using your own domain
 
@@ -149,9 +190,10 @@ Once you've bought a domain (Namecheap, Cloudflare, GoDaddy):
 
 ## Notes
 
-- **No dependencies.** No fonts, scripts or trackers are loaded from other
-  servers, so the site is fast and keeps working regardless of anyone else's
-  uptime.
+- **No dependencies.** No fonts or scripts are loaded from other servers
+  except the optional Cloudflare Analytics beacon (step 5) — everything else
+  is self-contained, so the site stays fast and keeps working regardless of
+  anyone else's uptime.
 - **Works without JavaScript.** If JS is blocked, every section still renders
   and the contact form still submits normally.
 - **Accessible.** Fully keyboard-navigable, with labelled form fields and

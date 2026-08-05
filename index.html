@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- TODO: Update the title and description below once you settle on your exact positioning. -->
+<title>BuildHaus — Websites for small businesses</title>
+<meta name="description" content="BuildHaus builds fast, modern, mobile-friendly websites for small businesses. Custom-built, launched in weeks, and looked after long-term.">
+<meta name="theme-color" content="#16213A">
+
+<link rel="icon" href="assets/logo.png">
+<link rel="apple-touch-icon" href="assets/logo.png">
+
+<!-- Open Graph / social sharing.
+     TODO: replace https://buildhaus.example with your real domain after you deploy. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="BuildHaus — Websites for small businesses">
+<meta property="og:description" content="Fast, modern, mobile-friendly websites for small businesses. Custom-built and launched in weeks.">
+<meta property="og:image" content="https://buildhaus.example/assets/logo.png">
+<meta property="og:url" content="https://buildhaus.example/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="stylesheet" href="styles.css">
+
+<!-- Marks the page as JavaScript-capable. Scroll-reveal animations only hide
+     content when this class is present, so if JS is off or script.js fails to
+     load, every section is visible instead of blank. -->
+<script>document.documentElement.className += " js";</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============================== HEADER ============================== -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+
+    <a class="brand" href="#top" aria-label="BuildHaus home">
+      <span class="brand-mark"><img src="assets/logo.png" alt=""></span>
+      <span class="brand-name">Build<span>Haus</span></span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btn-primary btn-sm nav-cta">Get a quote</a>
+    </nav>
+
+  </div>
+</header>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- =============================== HERO =============================== -->
+<section class="hero">
+  <div class="wrap hero-inner">
+
+    <div class="hero-copy">
+      <p class="eyebrow">Web design &amp; development</p>
+
+      <!-- TODO: This headline is the single most important line on the site.
+           Make it sound like you. -->
+      <!-- The space before <br> is deliberate: without it the heading is read
+           and copied as "forsmall businesses". -->
+      <h1>I build websites for <br class="hero-break"><span class="grad">small businesses.</span></h1>
+
+      <p class="lede">
+        Custom-designed, fast, and built to work perfectly on a phone —
+        launched in weeks, not months.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Start a project</a>
+        <a href="#work" class="btn btn-ghost">See what I build</a>
+      </div>
+
+      <ul class="hero-points">
+        <li>Built from scratch — no bloated templates</li>
+        <li>Loads fast, ranks well, looks right on every screen</li>
+        <li>Most sites live in 2–4 weeks</li>
+      </ul>
+    </div>
+
+    <!-- Decorative browser mockup, drawn entirely in CSS. No image files. -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="mock mock-back"></div>
+      <div class="mock mock-front">
+        <div class="mock-bar"><i></i><i></i><i></i></div>
+        <div class="mock-body">
+          <div class="mock-hero"></div>
+          <div class="mock-line w80"></div>
+          <div class="mock-line w60"></div>
+          <div class="mock-btn"></div>
+          <div class="mock-grid"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================= SERVICES ============================= -->
+<section class="section" id="services">
+  <div class="wrap">
+
+    <div class="section-head reveal">
+      <p class="eyebrow">What I do</p>
+      <h2>Three ways I can help</h2>
+      <p class="section-sub">Whether you're starting from nothing or fixing something that stopped working.</p>
+    </div>
+
+    <div class="cards">
+
+      <article class="card reveal">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2.5" y="3.5" width="19" height="17" rx="2.5"/><path d="M2.5 8.5h19"/><circle cx="6" cy="6" r=".6" fill="currentColor"/><circle cx="8.5" cy="6" r=".6" fill="currentColor"/>
+          </svg>
+        </div>
+        <h3>Business &amp; landing sites</h3>
+        <p>A complete website built around what your business actually needs customers to do — call, book, buy, or visit.</p>
+        <ul class="ticks">
+          <li>Custom design, not a template</li>
+          <li>Contact &amp; booking forms that reach you</li>
+          <li>Google-ready from day one</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v5h-5"/>
+          </svg>
+        </div>
+        <h3>Redesigns &amp; rescues</h3>
+        <p>Already have a site that's slow, dated, or broken on phones? I rebuild it properly without losing what already works.</p>
+        <ul class="ticks">
+          <li>Mobile-first rebuild</li>
+          <li>Speed &amp; performance fixes</li>
+          <li>Keep your content and rankings</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2.5l8 3.5v5.5c0 4.6-3.4 8.6-8 10-4.6-1.4-8-5.4-8-10V6z"/><path d="M9 12.2l2.1 2.1L15.4 10"/>
+          </svg>
+        </div>
+        <h3>Ongoing care</h3>
+        <p>Websites need looking after. I handle hosting, updates, backups and small changes so you never have to think about it.</p>
+        <ul class="ticks">
+          <li>Hosting &amp; domain setup</li>
+          <li>Content edits when you need them</li>
+          <li>Someone to call when it breaks</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================= PROCESS ============================= -->
+<section class="section section-alt" id="process">
+  <div class="wrap">
+
+    <div class="section-head reveal">
+      <p class="eyebrow">How it works</p>
+      <h2>Simple, start to finish</h2>
+      <p class="section-sub">No jargon and no surprises. You'll always know what happens next.</p>
+    </div>
+
+    <ol class="steps">
+      <li class="step reveal">
+        <span class="step-num">01</span>
+        <h3>We talk</h3>
+        <p>A short call about your business, your customers, and what the site needs to achieve. Free, no obligation.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-num">02</span>
+        <h3>I design</h3>
+        <p>You get a clear design of your homepage before any code is written, so there are no surprises later.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-num">03</span>
+        <h3>I build</h3>
+        <p>The site gets built for real — fast, responsive, and tested on phones, tablets and desktops.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-num">04</span>
+        <h3>We launch</h3>
+        <p>I handle the domain, hosting and go-live. Then I stay available for changes and support.</p>
+      </li>
+    </ol>
+
+  </div>
+</section>
+
+<!-- =============================== WORK ===============================
+     ⚠️  IMPORTANT — THESE THREE PROJECTS ARE PLACEHOLDERS.
+     Replace them with real work as soon as you have it. Nothing else on this
+     page convinces a client as fast as seeing a site you actually built.
+     To use a real screenshot, replace the <div class="shot ..."> element with:
+         <img src="assets/project-1.png" alt="Screenshot of the ... website">
+==================================================================== -->
+<section class="section" id="work">
+  <div class="wrap">
+
+    <div class="section-head reveal">
+      <p class="eyebrow">Recent work</p>
+      <h2>A few things I've built</h2>
+      <p class="section-sub">Every project starts blank and ends as something a business is proud to share.</p>
+    </div>
+
+    <div class="cards">
+
+      <article class="project reveal">
+        <div class="project-frame">
+          <div class="mock-bar sm"><i></i><i></i><i></i></div>
+          <div class="shot shot-1"></div>
+        </div>
+        <div class="project-body">
+          <h3>Northside Dental</h3><!-- TODO: real project name -->
+          <p>A clean booking-focused site for a local clinic — appointment requests went from phone-only to online.</p>
+          <div class="tags"><span>Business site</span><span>Booking form</span></div>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project-frame">
+          <div class="mock-bar sm"><i></i><i></i><i></i></div>
+          <div class="shot shot-2"></div>
+        </div>
+        <div class="project-body">
+          <h3>Cedar &amp; Co. Café</h3><!-- TODO: real project name -->
+          <p>Menu, hours and location on one fast-loading page that finally looks right on a phone.</p>
+          <div class="tags"><span>Redesign</span><span>Mobile-first</span></div>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project-frame">
+          <div class="mock-bar sm"><i></i><i></i><i></i></div>
+          <div class="shot shot-3"></div>
+        </div>
+        <div class="project-body">
+          <h3>Halim Contracting</h3><!-- TODO: real project name -->
+          <p>A portfolio of completed jobs that turned word-of-mouth referrals into inbound quote requests.</p>
+          <div class="tags"><span>Portfolio</span><span>Lead capture</span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CONTACT ============================== -->
+<section class="section contact" id="contact">
+  <div class="wrap contact-inner">
+
+    <div class="contact-copy reveal">
+      <p class="eyebrow light">Get in touch</p>
+      <h2>Let's build something.</h2>
+      <p>
+        Tell me a little about your business and what you need. I'll reply with
+        honest advice on what would actually help — even if that turns out to be
+        something other than a new website.
+      </p>
+
+      <ul class="contact-list">
+        <li>
+          <span class="ci">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3 6.5l9 6 9-6"/></svg>
+          </span>
+          <!-- TODO: confirm this address is exactly right — leads land here. -->
+          <a href="mailto:mohach22345@gmail.com">mohach22345@gmail.com</a>
+        </li>
+        <li>
+          <span class="ci">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17.6 14.2c-.3-.15-1.7-.85-2-.95-.27-.1-.46-.15-.66.15-.2.3-.75.95-.92 1.14-.17.2-.34.22-.63.08-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.34.44-.5.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.66-1.6-.9-2.18-.24-.58-.48-.5-.66-.5-.17 0-.36-.02-.56-.02-.2 0-.5.07-.77.37-.26.3-1 .98-1 2.4s1.03 2.78 1.17 2.97c.15.2 2.03 3.1 4.92 4.35.69.3 1.22.47 1.64.6.69.22 1.32.19 1.82.11.55-.08 1.7-.7 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.2-.56-.34z"/><circle cx="12" cy="12" r="9.3"/></svg>
+          </span>
+          <a href="https://wa.me/9613653083" target="_blank" rel="noopener">+961 3 653 083 (WhatsApp)</a>
+        </li>
+        <li>
+          <span class="ci">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.2l3.2 1.9"/></svg>
+          </span>
+          <span>Replies within one business day</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="form-card reveal">
+      <!-- ================== FORM SETUP — READ THIS ==================
+           This form does nothing until you connect it to Formspree (free):
+             1. Sign up at https://formspree.io
+             2. Create a new form, point it at your email
+             3. Copy the form ID it gives you (looks like: xdorwqvb)
+             4. Replace YOUR_FORM_ID on the next line with it
+           Until then, submissions will fail and show an error message.
+      ============================================================ -->
+      <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+
+        <div class="field">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" required autocomplete="name" placeholder="Jane Smith">
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email" placeholder="jane@business.com">
+        </div>
+
+        <div class="field">
+          <label for="project">What do you need?</label>
+          <select id="project" name="project">
+            <option value="New website">A new website</option>
+            <option value="Redesign">A redesign of my current site</option>
+            <option value="Fix or update">Fixes or updates</option>
+            <option value="Not sure yet">Not sure yet</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Tell me about it</label>
+          <textarea id="message" name="message" rows="4" required placeholder="What does your business do, and what would you like the site to achieve?"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Send message</button>
+
+        <p class="form-note">No spam, ever. Your details stay between us.</p>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+
+    <div class="footer-brand">
+      <span class="brand-name light">Build<span>Haus</span></span>
+      <p>Websites for small businesses that deserve to be found.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="footer-contact">
+      <a href="mailto:mohach22345@gmail.com">mohach22345@gmail.com</a>
+      <a href="https://wa.me/9613653083" target="_blank" rel="noopener">+961 3 653 083</a>
+    </div>
+
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; <span id="year">2026</span> BuildHaus. All rights reserved.</p>
+    <p>Designed &amp; built in-house.</p>
+  </div>
+</footer>
+
+<!-- Helps Google understand the business.
+     TODO: fill in real url, telephone and areaServed once you have them. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "BuildHaus",
+  "description": "Web design and development for small businesses.",
+  "email": "mohach22345@gmail.com",
+  "telephone": "+961 3 653 083",
+  "url": "https://buildhaus.example/",
+  "logo": "https://buildhaus.example/assets/logo.png",
+  "serviceType": "Website design and development"
+}
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>

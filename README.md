@@ -125,21 +125,12 @@ because a placeholder token logs a harmless but noisy console error.
 Search `index.html` for **`TODO:`** — every spot that needs your real
 information is marked.
 
-The most important one is the **Work** section. It currently contains three
-invented projects (Northside Dental, Cedar & Co. Café, Halim Contracting).
-Nothing sells your service faster than real sites you've actually built, so
-swap these out as soon as you can.
-
-To use a real screenshot, put the image in `assets/` and replace the coloured
-placeholder block:
-
-```html
-<!-- replace this -->
-<div class="shot shot-1"></div>
-
-<!-- with this -->
-<img src="assets/project-1.png" alt="Screenshot of the Northside Dental website">
-```
+There's no Work/portfolio section yet — it was pulled since there was nothing
+real to show. Nothing sells your service faster than real sites you've
+actually built, so once you have even one project, ask to have that section
+added back in with it. The original placeholder version (three sample
+projects with a coloured mockup style) is still in the git history if you
+want it restored as a starting point.
 
 ### Changing colours
 
